@@ -1,0 +1,154 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background: url('../img/fon2.jpeg');
+}
+header {
+	width: 100%;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+footer {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: whitesmoke;
+	background-color: #000;
+	opacity: 0.5;
+	margin-top: 4em;
+	font-size: 1.3em;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+@font-face {
+    font-family: Heinrich; /* Имя шрифта */
+    src: url(Heinrich.ttf); /* Путь к файлу со шрифтом */
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: wheat;
+}
+hr {
+	width: 100%;
+	margin-bottom: 0.8em;
+}
+footer div a {
+	color: whitesmoke;
+}
+footer div a:hover {
+	color: purple;
+}
+.logo {
+	font-family: Heinrich;
+    font-size: 2.4em;
+    font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 70%;
+	margin-left: 15%;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.links {
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-family: Heinrich;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.links div { flex: 1; display: flex; flex-wrap: wrap; justify-content: space-around; }
+.links a { text-decoration: none; }
+.main-block { width: 100%; float: left; margin-bottom: 4em; }
+.big-img {
+	float: left;
+	width: 70%;
+	height: 500px;
+	margin-left: 15%;
+	background: url('../img/imgonline-com-ua-Resize-9woscYfDDsFTH3fd.jpg');
+	position: relative;
+}
+.big-img-text {
+	width: 90%;
+	margin-left: 5%;
+	color: #FFF;
+	font-size: 1.8em;
+	float: left;
+	position: absolute;
+	bottom: 4em;
+	font-family: Heinrich;
+}
+.big-img-btn { width: 200px; margin-left: 30%; bottom: 2em; float: left; position: absolute; font-family: Heinrich; font-size: 1.5em; font-weight: 500;}
+.big-img-btn a { text-decoration: none; color: purple;}
+.big-img-btn a:hover {color: wheat;}
+.slider { width: 70%; margin-left: 15%; float: left; margin-bottom: 2em; margin-top: 2em; height: 420px; }
+.slider-img { width: 35%; }
+.slider-text { width: 65%; display: flex; align-items: center; flex-wrap: wrap; justify-content: center; }
+.slider-text div { width: 80%; margin-left: 10%; text-align: center; }
+.slider-text div a { text-decoration: none;}
+.slider-img, .slider-text { float: left; height: 420px; background-color: #89609F; font-family: Heinrich; font-weight: 500; font-size: 1.5em; }
+.slider-img img { height: 420px; }
+.offer { width: 70%; float: left; margin-left: 15%; margin-top: 1em; margin-bottom: 1em; display: flex; flex-wrap: wrap;
+ justify-content: space-around; font-family: Heinrich; font-size: 1.5em; }
+.offer-item { float: left; width: 30%; }
+.offer-item img { height: 200px; }
+
+.before-after { width: 70%; margin-left: 15%; float: left; }
+.before-after-img { width: 65%; float: left; position: relative; }
+.before-after-img div { text-align: center; margin-top: 0.5em; width: 98%; font-family: Heinrich; font-size: 1.5em;}
+.before-after-img img { width: 45%; opacity: 0.5;}
+.before-after-text { width: 35%; float: left; background-color: #89609F; font-family: Heinrich; font-size: 1.4em; text-align: center; margin-top: 0.5em;}
+.before-after-img img:hover {opacity: 1;}
+@media (max-width: 900px) {
+	.logo, .links, .big-img, .slider, .offer, .before-after {
+		width: 86%;
+		margin-left: 7%;
+	}
+}
+@media (max-width: 750px) {
+	.logo, .links, .big-img, .slider, .offer, .before-after {
+		width: 96%;
+		margin-left: 2%;
+	}
+}
+@media (max-width: 660px) {
+	.links { margin-top: 2em; }
+	.big-img { display: none; }
+}
+@media (max-width: 600px) {
+	.slider-img { width: 50%; }
+	.slider-text { width: 50%; }
+	.before-after { margin-top: 2em; }
+}
+@media (max-width: 500px) {
+	.offer { margin-top: 2em; }
+	.offer-item { width: 100%; }
+	.offer-item img { height: 250px; }
+	.before-after-img { width: 100%;  }
+	.before-after-img div { text-align: center; }
+	.before-after-img div img { width: 45%; }
+	.before-after-text { display: none; }
+	.slider { height: auto; }
+	.slider-img { width: 100%; }
+	.slider-text { width: 100%; }
+}

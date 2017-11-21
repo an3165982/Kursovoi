@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background: url('../img/fon2.jpeg');
+}
+header {
+	width: 100%;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+footer {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: whitesmoke;
+	background-color: #000;
+	opacity: 0.5;
+	margin-top: 4em;
+	font-size: 1.3em;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+@font-face {
+    font-family: Heinrich; /* Имя шрифта */
+    src: url(Heinrich.ttf); /* Путь к файлу со шрифтом */
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	color: wheat;
+}
+hr {
+	width: 100%;
+	margin-bottom: 0.8em;
+}
+footer div a {
+	color: whitesmoke;
+}
+footer div a:hover {
+	color: purple;
+}
+.logo {
+	font-family: Heinrich;
+    font-size: 2.4em;
+    font-weight: bold;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 70%;
+	margin-left: 15%;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.links {
+	width: 70%;
+	margin-left: 15%;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	display: flex;
+	align-items: center;
+	height: 40px;
+	font-family: Heinrich;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.links div { flex: 1; display: flex; flex-wrap: wrap; justify-content: space-around; }
+.links a { text-decoration: none; }
+.main-block { width: 100%; float: left; margin-top: 1em; margin-bottom: 4em; }
+.description {
+	float: left;
+	width: 70%;
+	height: 400px;
+	margin-left: 15%;
+	position: relative;
+}
+.oils {
+	float: left;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 0.5em;
+}
+.slider { width: 70%; margin-left: 15%; float: left; margin-top: 2em; height: 460px; }
+.slider-img { width: 45%; }
+.slider-text { width: 55%; display: flex; align-items: center; flex-wrap: wrap; justify-content: center; background-color: #89609F; height: 91.5%;}
+.slider-text0 {width: 100%; font-family: Heinrich; font-size: 1.5em; font-weight: bold;}
+.slider-text2 {float: left; font-family: Heinrich; font-size: 1.5em;width: 55%; display: flex; align-items: center;
+text-align: center; height: 17.5em; flex-wrap: wrap; justify-content: center; background-color: #89609F;}
+.slider-text div { width: 96%; margin-left: 2%; text-align: center; }
+.slider-text div a { text-decoration: none;}
+.slider-img, .slider-text { float: left; font-family: Heinrich; font-weight: 500; font-size: 1.5em; }
+.slider-img img { height: 420px; }
+.offer { width: 70%; float: left; margin-left: 15%; margin-top: 1em; display: flex; flex-wrap: wrap;
+ justify-content: space-around; font-family: Heinrich; font-size: 1.5em;}
+.offer-item1, .offer-item2, .offer-item3 { width: 30%; float: left; text-align: center; font-size: 1em;}
+
+.offer-item1:hover
+{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.offer-item2:hover
+{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.offer-item3:hover
+{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+@media (max-width: 1064px) {
+	.logo, .links, .slider, .offer, .oils {
+		width: 86%;
+		margin-left: 7%;
+	}
+}
+@media (max-width: 866px) {
+	.logo, .links, .slider, .offer , .oils {
+		width: 96%;
+		margin-left: 2%;
+	}
+}
+@media (max-width: 764px) {
+	.logo, .links, .slider, .offer , .oils {
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+@media (max-width: 734px) {
+	.offer { margin-top: 2em; }
+	.offer-item { width: 100%; }
+	.offer-item img { height: 250px; }
+	.slider { height: auto; }
+	.slider-img { width: 100%; }
+	.slider-text , .slider-text2 { width: 100%; }
+	.slider-text2 div {width: 100%; }
+}
+@media (max-width: 405px) {
+	.offer { margin-top: 2em; }
+	.offer-item { width: 100%; }
+	.offer-item img { height: 250px; }
+	.slider { height: auto; }
+	.slider-img { width: 100%; }
+	.slider-text { width: 100%; }
+}

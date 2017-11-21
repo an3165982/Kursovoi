@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston-Вечериние причёски</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/Hairstyles.css">
+	<script type="text/javascript">
+		window.onload = function () {
+			var time = 4000;
+			var img = document.getElementById ('img_1');
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/prich.jpeg' ) { img.setAttribute('src', 'img/prich1.jpeg') }
+					else if ( img.getAttribute ('src') == 'img/prich1.jpeg' ) { img.setAttribute('src', 'img/prich2.jpeg') }
+						else if ( img.getAttribute ('src') == 'img/prich2.jpeg') { img.setAttribute('src', 'img/prich.jpeg') }
+				f = setTimeout (FName, time);
+			}, time);
+		}
+		function f1() {
+			var f1 = document.getElementById("img_2");
+			if ( f1.getAttribute ('src') == 'img/pop1.jpeg' ) { f1.setAttribute('src', 'img/pop2.jpeg') }
+					else if ( f1.getAttribute ('src') == 'img/pop2.jpeg' ) { f1.setAttribute('src', 'img/pop3.png') }
+						else if ( f1.getAttribute ('src') == 'img/pop3.png') { f1.setAttribute('src', 'img/pop4.jpeg') }
+						else if ( f1.getAttribute ('src') == 'img/pop4.jpeg') { f1.setAttribute('src', 'img/pop5.jpeg') }
+						else if ( f1.getAttribute ('src') == 'img/pop5.jpeg') { f1.setAttribute('src', 'img/pop6.jpeg') }
+						else if ( f1.getAttribute ('src') == 'img/pop6.jpeg') { f1.setAttribute('src', 'img/pop1.jpeg') }
+		}
+	function f2() {
+			var f2 = document.getElementById("img_2");
+			if ( f2.getAttribute ('src') == 'img/pop1.jpeg' ) { f2.setAttribute('src', 'img/pop6.jpeg') }
+					else if ( f2.getAttribute ('src') == 'img/pop2.jpeg' ) { f2.setAttribute('src', 'img/pop1.jpeg') }
+						else if ( f2.getAttribute ('src') == 'img/pop3.png') { f2.setAttribute('src', 'img/pop2.jpeg') }
+						else if ( f2.getAttribute ('src') == 'img/pop4.jpeg') { f2.setAttribute('src', 'img/pop3.png') }
+						else if ( f2.getAttribute ('src') == 'img/pop5.jpeg') { f2.setAttribute('src', 'img/pop4.jpeg') }
+						else if ( f2.getAttribute ('src') == 'img/pop6.jpeg') { f2.setAttribute('src', 'img/pop5.jpeg') }
+		}
+	</script>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="big-img">
+			<hr>
+			<div class="big-img-text">Создание вечерних и свадебных причёсок</div>
+			<img src="img/prich.jpeg" id="img_1">
+			<div class="big-img-text-after">Как же важно любой женщине всегда выглядеть потрясающе, а в особенных, ответственных для неё моментах это желание усиливается стократно. Стилисты нашей студии готовы помочь любой даме создать неповторимый стильный образ для пышных торжеств, Дней Рождений, выпускных, свадеб и других праздников и важных событий. Обратившись к мастерам студии красоты «Boston» за свадебной или вечерней причёской, Вы смело затмите своей красотой всех гостей на празднике, а памятные фотографии с торжества из года в год будут вызывать у вас гордость и восхищение. </div>
+		</div>
+
+		<div class="offer">
+			<hr/>
+			<div class="offer-text">Варианты причёсок на короткие волосы</div>
+			<div class="offer-item">
+				<div><img src="img/pr1.jpeg"></div>
+			</div>
+			<div class="offer-item">
+				<div><img src="img/pr2.jpeg"></div>
+			</div>
+			<div class="offer-item">
+				<div><img src="img/pr3.jpeg"></div>
+			</div>
+			<div class="offer-text-after">
+				<div>
+					<ul>
+                <li>Для коротких волос вечерние причёски нужны не меньше, чем для длинных, и требуют они, порой, даже более кропотливой и искусной работы.</li>
+                <li>Вечерние причёски на средние волосы стоят немного дороже, чем на короткие, но всегда восхищают разнообразием выбора и умелой работой стилистов салона.</li>
+                <li>Наши специалисты также предлагают на выбор большое разнообразие вечерних причёсок на длинные волосы, способных подчеркнуть прелесть Вашего наряда и красивый макияж.</li>
+            </ul></div>
+			</div>
+		</div>
+
+		<div class="before-after">
+			<hr />
+			<div class="before-after-text">Наиболее популярные причёски</div>
+			<div class="before-after-img">
+				<img src="img/pop1.jpeg" id="img_2">
+				<a onclick="f1()"><div class="pro1"></div></a>
+				<a onclick="f2()"><div class="pro2"></div></a>
+			</div>
+			
+		</div>
+	</div>
+
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>

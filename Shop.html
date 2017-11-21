@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston-Магазин</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/Shop.css">
+	<script type="text/javascript">
+		function f1(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/5$.jpeg');
+		}
+		function f2(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/6$(1).jpeg');
+		}
+		function f3(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/6$(2).jpeg');
+		}
+		function f4(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/7$.jpeg');
+		}
+		window.onload = function () {
+			var time = 4000;
+			var img = document.getElementById ('img_1');
+			var img1 = document.getElementById ('img_2');
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/shp1.jpeg' ) { img.setAttribute('src', 'img/shp2.jpeg') }
+					else if ( img.getAttribute ('src') == 'img/shp2.jpeg' ) { img.setAttribute('src', 'img/shp3.jpeg') }
+						else if ( img.getAttribute ('src') == 'img/shp3.jpeg') { img.setAttribute('src', 'img/shp4.jpeg') }
+						else if ( img.getAttribute ('src') == 'img/shp4.jpeg') { img.setAttribute('src', 'img/shp5.jpeg') }
+						else if ( img.getAttribute ('src') == 'img/shp5.jpeg') { img.setAttribute('src', 'img/shp1.jpeg') }
+				f = setTimeout (FName, time);
+			}, time);
+			var f1 = setTimeout (function FName () {
+				if ( img1.getAttribute ('src') == 'img/oil.jpeg' ) { img1.setAttribute('src', 'img/oil1.jpeg') }
+					else if ( img1.getAttribute ('src') == 'img/oil1.jpeg' ) { img1.setAttribute('src', 'img/oil2.jpeg') }
+						else if ( img1.getAttribute ('src') == 'img/oil2.jpeg') { img1.setAttribute('src', 'img/oil3.jpeg') }
+						else if ( img1.getAttribute ('src') == 'img/oil3.jpeg') { img1.setAttribute('src', 'img/oil1.jpeg') }
+				f1 = setTimeout (FName, time);
+			}, time);
+		}
+	</script>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="offer">
+			<hr/>
+			<div class="offer-item">
+				<div style="font-weight: bold;">В нашем магазине вы можете приобрести средства по уходу за волосами</div>
+			</div>
+			<div>Для сохранения красоты и здоровья волос неоходим правильный уход. Чаще всего представительницы прекрасного пола забывают о важности подбора правильных средств, подходящих именно к их типу волос. В нашем магазине вы сможете найти необходимые средства по уходу за волосами после наращивания, кератинового выпрямления и других процедур. Так же мы рекомендуем использовать эти средства даже если вы не делали данные процедуры.</div>
+		</div>
+
+		<div class="slider">
+			<hr>
+			<div class="slider-text0">Бессульфатные шампуни(+бальзам).</div>
+			<div class="slider-img">
+				<img src="img/shp1.jpeg" id="img_1" />
+			</div>
+			<div class="slider-text">
+				<div>
+					Natura Siberica — российская косметическая компания, специализирующаяся на производстве натуральной и органической косметики. Данная продукция отвечает европейским стандартам качества органической косметики, что подтверждено многочисленными престижными сертификатами. Natura Siberica – это не просто натуральная косметика и не просто косметика на травах. Это первая в России сертифицированная органическая косметика.
+				</div>
+				<div>Шампунь(400мл) - $7</div>
+				<div>Бальзам(400мл) - $5</div>
+				<div>Для получения информации о наличии товара и его заказе звонить по номеру +375293282045</div>
+			</div>
+		</div>
+
+		<div class="offer">
+			<hr/>
+			<div class="offer-item1">
+				<div><img src="img/p1.jpeg"></div>
+				<div>Цена(300мл) - $17</div>
+			</div>
+			<div class="offer-item2">
+				<div><img src="img/p2.jpeg"></div>
+				<div>Цена(1000мл) - $15</div>
+			</div>
+			<div class="offer-item3">
+				<div><img src="img/p3.jpeg"></div>
+				<div>Цена(500мл) - $12</div>
+			</div>
+		</div>
+
+		<div class="oils">
+			<hr />
+			<img src="img/oil.jpeg" id="img_2">
+			
+				<div class="slider-img">
+					<img src="img/5$.jpeg" id="img_3" />
+				</div>
+				<div class="slider-text2">
+					<div>
+						Большинство девушек мечтает укрепить свои волосы, сделать их более пышными и здоровыми. По мнению многих специалистов в этой области, лучшим средством для лечения волос являются натуральные масла. При лечении волос маслами и средствами на их основе восстанавливаются и укрепляются волосяные кутикулы и луковицы. В нашем магазине вы можете приобрести следующие масла:
+					</div>
+					<div style="font-weight: bold;"><a onclick="f1()">- Масло экстраординарное(Elseve)</a></div>
+					<div style="font-weight: bold;"><a onclick="f2()">- Кокосовое масло(Nutiva)</a></div>
+					<div style="font-weight: bold;"><a onclick="f3()">- Масло макадамии(Macadamia)</a></div>
+					<div style="font-weight: bold;"><a onclick="f4()">- Аргановое масло(Diarargan)</a></div>
+				</div>
+			
+		</div>
+	</div>
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>

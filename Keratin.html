@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston-Кератиновое выпрямление</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/Keratin.css">
+	<script src="js/jquery-3.2.0.js"></script>
+	<script type="text/javascript">
+		
+		function f11(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/sr1.jpeg');
+		}
+		function f22(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/sr2.jpeg');
+		}
+		function f33(){
+			var k1 = document.getElementById("img_3");
+			k1.setAttribute('src','img/sr3.jpeg');
+			
+		}
+		window.onload = function () {
+			var time = 4000;
+			var time1 = 5000;
+
+			var img1 = document.getElementById ('img_1');
+
+			var img = document.getElementById ('img_0');
+			
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/ker.jpeg' ) { img.setAttribute('src', 'img/ker1.jpeg') }
+				else if ( img.getAttribute ('src') == 'img/ker1.jpeg' ) { img.setAttribute('src', 'img/ker2.jpeg') }
+				else if ( img.getAttribute ('src') == 'img/ker2.jpeg') { img.setAttribute('src', 'img/ker.jpeg') }
+
+				f = setTimeout (FName, time);
+			}, time);
+			var f1 = setTimeout (function FName1 () {
+				if ( img1.getAttribute ('src') == 'img/sk1.jpeg' ) { img1.setAttribute('src', 'img/sk2.jpeg') }
+				else if ( img1.getAttribute ('src') == 'img/sk2.jpeg' ) { img1.setAttribute('src', 'img/sk3.jpeg') }
+				else if ( img1.getAttribute ('src') == 'img/sk3.jpeg') { img1.setAttribute('src', 'img/sk1.jpeg') }
+
+				f1 = setTimeout (FName1, time1);
+			}, time1);
+		}
+	</script>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="big-img">
+			<img src="img/ker.jpeg" id="img_0"> 
+		</div>
+
+		<div class="slider">
+			<div class="slider-img">
+				<img src="img/sk1.jpeg" id="img_1" />
+			</div>
+			<div class="slider-text" name="slider-text">
+				<div>
+					В нашем салоне вас проконсультируют по всем вопросам процедуры кератинового выпрямления волос и подберут оптимальный состав для выпрямления и восстановления ваших волос. Подбор продукта для каждого клиента индивидуален, и всегда зависит от предпочтений, пожеланий клиента и состояния его волос. Мастер всегда прислушивается к вашим пожеланиям и порекомендует именно тот состав, который необходим для ваших волос. Проводя процедуру кератинового выпрямления волос ежедневно, мы испробовали много составов и знаем точно, каким будет результат на ваших волосах при выборе определенного кератина для волос. 
+				</div>
+			</div>
+		</div>
+
+		<div class="before-after">
+			<hr />
+				<div class="before-after-text">Неизменным достоинством каждой девушки считаются длинные густые волосы.
+					Они привлекают внимание своим блеском и красотой. Не всех природа наделила щедро таким богатством.
+					Многие прибегают к услугам парикмахеров и добавляют длину и объем путем наращивания.
+					Наша студия поможет вам не только приобрести желаемое, но и улучшить то, что есть.
+				</div>
+			<div class="slider1">
+			<div class="slider-img1">
+				<img src="img/sr1.jpeg" class="header_img" id="img_3" />
+			</div>
+			<div class="slider-text1">
+				<div>В студии красоты Boston вам предложат несколько видов кератинового выпрямления волос. Выбор будет зависеть от того, какой конечный результат вы желаете получить. В своей работе мы используем: </div> <div><a onclick="f11()">CADIVEU BRASIL CACAU(Бразилия)</a></div> <div><a onclick="f22()">COCOCHOCO(Израиль)</a></div> <div><a onclick="f33()">Keratin Research- GOLD LABEL(США)</a></div> <div>Мастера нашей студии красоты помогут вам определиться в выборе састава, расскажут о преимуществах того или иного состава, а так же проконсультируют вас по дальнейшему уходу за вашими волосами после данной процедуры.</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston-Наращивание волос</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/Hair-extention.css">
+	<script src="js/jquery-3.2.0.js"></script>
+	<script type="text/javascript">
+		function f1() {
+
+			var block=document.getElementById('slider');
+			 var block2=document.getElementById('slider1');
+			  if(block.className=='slider'){block.className='slider1'; block2.className='slider'}
+			   return false;
+			}
+			function f2() {
+			var block=document.getElementById('slider');
+			 var block2=document.getElementById('slider1');
+			  if(block2.className=='slider'){block2.className='slider1'; block.className='slider'}
+			   return false;
+			}
+				window.onload = function () {
+			var time = 4000;
+
+			var img = document.getElementById ('img_0');
+
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/nar.jpeg' ) { img.setAttribute('src', 'img/nar1.jpeg') }
+				else if ( img.getAttribute ('src') == 'img/nar1.jpeg' ) { img.setAttribute('src', 'img/nar2.jpeg') }
+				else if ( img.getAttribute ('src') == 'img/nar2.jpeg') { img.setAttribute('src', 'img/nar.jpeg') }
+
+				f = setTimeout (FName, time);
+			}, time);
+		}
+
+	</script>
+	<title></title>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="big-img">
+			<img src="img/nar.jpeg" id="img_0">
+		</div>
+
+		<div class="slider" id="slider">
+			<div class="slider-img">
+				<img src="img/hot.jpeg" id="hot" />
+			</div>
+			<div class="slider-text" >
+				<div>Капсульный метод наращивания волос</div>
+				<div>Вообще этот тип наращивания является самым распространенным и востребованным среди девушек и женщин любого возраста. Он является столь популярным за счет возможности создания различных причесок, что ленточное наращивание не предусматривает (видны места крепления). В связи с малой востребованностью ленточного наращивания, в нашей студии возможно только капсульно наращивание.
+				</div>
+				<div><a onclick="f1()">Ленточное наращивание волос ></a></div>
+			</div>
+		</div>
+		<div class="slider1" id="slider1">
+			<div class="slider-img">
+				<img src="img/cold.jpg" id="hot" />
+			</div>
+			<div class="slider-text" >
+				<div>Ленточный метод наращивания волос</div>
+				<div>Технология ленточного наращивания относится к холодным видам искусственного удлинения волос и заключается в том, что донорские и природные волосы соединяются при помощи специальной клейкой ленты. Эта услуга идеально подойдет тем, кто желает нарастить волосы в первый раз, а также барышням, достаточно часто меняющим свой имидж.
+				</div>
+				<div><a onclick="f2()">< Капсульное наращивание волос</a></div>	
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>

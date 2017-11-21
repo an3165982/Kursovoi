@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston-Полировка, Экранирование</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/Shielding.css">
+	<script type="text/javascript">
+		window.onload = function () {
+			var time = 4000;
+			var img = document.getElementById ('img_1');
+			var img1 = document.getElementById ('img_2');
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/pol1.jpeg' ) { img.setAttribute('src', 'img/pol2.jpeg') }
+					else if ( img.getAttribute ('src') == 'img/pol2.jpeg' ) { img.setAttribute('src', 'img/pol3.jpeg') }
+						else if ( img.getAttribute ('src') == 'img/pol3.jpeg') { img.setAttribute('src', 'img/pol1.jpeg') }
+				f = setTimeout (FName, time);
+			}, time);
+			var f1 = setTimeout (function FName1 () {
+				if ( img1.getAttribute ('src') == 'img/ekr1.jpeg' ) { img1.setAttribute('src', 'img/ekr.jpeg') }
+					else if ( img1.getAttribute ('src') == 'img/ekr.jpeg' ) { img1.setAttribute('src', 'img/ekr2.jpeg') }
+						else if ( img1.getAttribute ('src') == 'img/ekr2.jpeg') { img1.setAttribute('src', 'img/ekr1.jpeg') }
+				f1 = setTimeout (FName1, time);
+			}, time);
+		}
+	</script>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="big-img">
+			<hr>
+			<div class="big-img-text">Полировка волос</div>
+			<div><img src="img/pol1.jpeg" id="img_1"></div>
+		</div>
+
+		<div class="slider">
+			<div class="slider-img">
+				<img src="img/pol.jpeg" />
+			</div>
+			<div class="slider-text">
+				<div>
+					Секущиеся кончики – проблема на сегодня достаточно частая, с которой легко справится полировка волос. Множество факторов негативно влияет на состояние наших волос. Раньше проблему с кончиками решала стрижка поврежденных волос. Но девушки, которые дорожат длиной своих волос при упоминании о стрижке кончиков приходят в ужас. Однако при использовании насадки для полировки длина ваших волос практически не пострадает.
+				</div>
+			</div>
+		</div>
+
+		<div class="slider">
+			<hr />
+			<div class="text">Экранирование волос</div>
+			<div class="slider-img">
+				<img src="img/ekr1.jpeg" id="img_2">
+			</div>
+			<div class="slider-text"><div>Экранирование заключается в покрытии волос тонкой пленкой с особым питательным составом, благодаря которому происходит защита и укрепление их внутренней структуры. Действие препарата имеет сходства с ламинированием, но в нем витамины действуют только на поверхности стержня. Именно в этом заключается самая большая отличительная черта экранирования волос.</div></div>
+		</div>
+	</div>
+
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>

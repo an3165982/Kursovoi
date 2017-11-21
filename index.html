@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Студия красоты Boston</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<script type="text/javascript">
+		window.onload = function () {
+			var time = 4000;
+			var img = document.getElementById ('img_1');
+			var f = setTimeout (function FName () {
+				if ( img.getAttribute ('src') == 'img/sl1.jpg' ) { img.setAttribute('src', 'img/sl2.jpg') }
+					else if ( img.getAttribute ('src') == 'img/sl2.jpg' ) { img.setAttribute('src', 'img/sl3.jpg') }
+						else if ( img.getAttribute ('src') == 'img/sl3.jpg') { img.setAttribute('src', 'img/sl4.jpg') }
+						else if ( img.getAttribute ('src') == 'img/sl4.jpg') { img.setAttribute('src', 'img/sl5.jpg') }
+						else if ( img.getAttribute ('src') == 'img/sl5.jpg') { img.setAttribute('src', 'img/sl1.jpg') }
+				f = setTimeout (FName, time);
+			}, time);
+		}
+	</script>
+</head>
+<body>
+	<header id="top">
+		<div class="logo">Студия красоты "Boston"</div>
+		<div class="links">
+			<div>
+				<div><a href="index.html">Главная</a></div>
+				<div><a href="Services.xml">Услуги</a></div>
+				<div><a href="Shop.html">Магазин</a></div>
+				<div><a href="About.html">О нас</a></div>
+			</div>
+			<div>
+				Меняйтесь к лучшему
+			</div>
+		</div>
+	</header>
+
+	<div class="main-block">
+		<div class="big-img">
+			<div class="big-img-text">Великолепные волосы для повседневной жизни</div>
+			<div class="big-img-btn"><a href="Hair-extention.html">Подробнее</a></div>
+		</div>
+
+		<div class="slider">
+			<div class="slider-img">
+				<img src="img/sl1.jpg" class="header_img" id="img_1" />
+			</div>
+			<div class="slider-text">
+				<div>Почему именно наша студия?</div>
+				<div>
+					В нашей студии вы можете получить консультацию и выбрать оптимальную услугу, подходящую именно вам. Гарант нашего качества это прежде всего высококвалифицированные специалисты, качественная и проверенная продукция известных брендов.
+				</div>
+				<div><a href="About.html">Подробнее</a></div>
+			</div>
+		</div>
+
+		<div class="offer">
+			<hr/>
+			<div class="offer-item">
+				<div><a href="Hair-extention.html">Наращивание волос</a></div>
+				<div><a href="Hair-extention.html"><img src="img/nar.jpg"></a></div>
+			</div>
+			<div class="offer-item">
+				<div><a href="Therapy.html">Лечение волос</a></div>
+				<div><a href="Therapy.html"><img src="img/vipr.jpg"></a></div>
+			</div>
+			<div class="offer-item">
+				<div><a href="Hairstyles.html">Вечерние причёски</a></div>
+				<div><a href="Hairstyles.html"><img src="img/prich.jpg"></a></div>
+			</div>
+		</div>
+
+		<div class="before-after">
+			<hr />
+			<div class="before-after-img">
+				<div>
+					<center>
+						<img src="img/do.jpg">
+						<img src="img/posle.jpg">
+					</center>
+				</div>
+				<div>Неизменным достоинством каждой девушки считаются длинные густые волосы.
+					Они привлекают внимание своим блеском и красотой. Не всех природа наделила щедро таким богатством.
+					Многие прибегают к услугам парикмахеров и добавляют длину и объем путем наращивания.
+					Наша студия поможет вам не только приобрести желаемое, но и улучшить то, что есть.
+				</div>
+			</div>
+			<div class="before-after-text">Красота - это обещание счастья.<br/>-<br/><font size="4">Вольтер</font><br/><br/>Причёска влияет на то, как складывается день, а в итоге и жизнь.<br/>-<br/><font size="4">Софи Лорен</font>
+    <br/><br/>Чем хуже у девушки дела, тем лучше она должна выглядеть.<br/>-<br/><font size="4">Коко Шанель</font><br/>
+    <br/>Чтобы быть незаменимой, нужно всё время меняться.<br/>-<br><font size="4">Коко Шанель</font></div>
+		</div>
+	</div>
+
+	<footer>
+		<div><a href="#top">Наверх</a></div>
+		<div>Boston</div>
+	</footer>
+</body>
+</html>
