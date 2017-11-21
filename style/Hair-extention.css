@@ -114,5 +114,5 @@ footer div a:hover {
 	.links { margin-top: 2em; }
 	.slider { height: auto; }
 	.slider-img { width: 100%; }
-	.slider-text { width: 100%; }
+	.slider-text { width: 100%; height:auto; }
 }
