@@ -124,7 +124,7 @@ table {
 @media (max-width: 600px) {
 	.before-after { margin-top: 2em; }
 }
-@media (max-width: 500px) {
+@media (max-width: 535px) {
 	.before-after-img { width: 100%;  }
 	.before-after-img div { text-align: center; }
 	.before-after-img div img { width: 45%; }
