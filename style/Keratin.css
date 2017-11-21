@@ -165,7 +165,6 @@ footer div a:hover {
 }
 @media (max-width: 660px) {
 	.links { margin-top: 2em; }
-	.big-img { display: none; }
 }
 @media (max-width: 620px) {
 	.before-after-img { width: 100%;  }
