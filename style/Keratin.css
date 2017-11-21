@@ -174,9 +174,9 @@ footer div a:hover {
 	.before-after-text { display: none; }
 	.slider { height: auto; margin-bottom: 1em;}
 	.slider-img { width: 60%; margin-left: 20%; height: 370px;}
-	.slider-text { width: 100%; }
+	.slider-text { width: 100%; height:auto;}
 	.slider1 { height: auto; margin-top: 0em;}
 	.slider-img1 { width: 70%; margin-left: 15%;}
-	.slider-text1 { width: 100%; font-size: 1.2em;}
+	.slider-text1 { width: 100%; font-size: 1.2em; height:auto;}
 	.slider-img img {height: 360px;}
 }
