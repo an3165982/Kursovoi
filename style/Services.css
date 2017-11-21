@@ -91,7 +91,7 @@ table {
 	height: auto;
 }
 .big-img-tbl { width: 59.2%; float: left; margin-top: 1em; margin-left: 0.5em; height: auto;}
-.big-img-tbl table {width: 100%; float: left; height: 40%; font-family: Heinrich; font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em;}
+.big-img-tbl table {width: 100%; float: left; height: 30%; font-family: Heinrich; font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em;}
 .big-img-text1 { float:left; width: 100%; text-align: center; font-family: Heinrich; font-size: 1.6em; font-weight: bold;}
 .big-img-text2 {width: 100%; font-family: Heinrich; font-size: 1.5em; text-align: center; float: left;}
 .big-img-text3 {text-align: center; font-family: Heinrich; font-size: 1.5em; font-weight: bold; float: left;}
