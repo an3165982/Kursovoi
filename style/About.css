@@ -132,9 +132,9 @@ footer div a:hover {
 		margin-left: 0%;
 	}
 	.links { margin-top: 2em; }
-	.big-img-text { height: 23em; width: 10em; margin-left: 68%; font-size: 1.3em;}
+	.big-img-text { height: 7em; width: 100%; margin-left: 0%; margin-top:17.1em; font-size: 1.3em;}
 }
-@media (max-width: 600px) {
+@media (max-width: 535px) {
 
 }
 @media (max-width: 500px) {
