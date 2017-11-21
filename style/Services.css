@@ -88,6 +88,7 @@ table {
 	float: left;
 	width: 70%;
 	margin-left: 15%;
+	height: auto;
 }
 .big-img-tbl { width: 59.2%; float: left; margin-top: 1em; margin-left: 0.5em; height: 79%;}
 .big-img-tbl table {width: 100%; float: left; height: 40%; font-family: Heinrich; font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em;}
