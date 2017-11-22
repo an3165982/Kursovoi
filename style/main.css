@@ -112,7 +112,11 @@ footer div a:hover {
  justify-content: space-around; font-family: Heinrich; font-size: 1.5em; }
 .offer-item { float: left; width: 30%; }
 .offer-item img { height: 200px; }
-.offer-item img: hover { -webkit-transform: scale(1.5); -ms-transform: scale(1.5);transform: scale(1.5);}
+.offer-item img:hover {
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 .before-after { width: 70%; margin-left: 15%; float: left; }
 .before-after-img { width: 65%; float: left; position: relative; }
