@@ -93,6 +93,11 @@ footer div a:hover {
 .before-after-img { width:100%; float: left; height: 100%; }
 .before-after-img div { text-align: center; margin-top: 0.5em; width: 100%; font-family: Heinrich; font-size: 1.5em;}
 .before-after-img img { width: 49%; }
+.before-after-img img:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
 
 @media (max-width: 900px) {
 	.logo, .links, .big-img, .before-after {
