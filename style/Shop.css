@@ -107,25 +107,6 @@ text-align: center; height: 17.5em; flex-wrap: wrap; justify-content: center; ba
  justify-content: space-around; font-family: Heinrich; font-size: 1.5em;}
 .offer-item1, .offer-item2, .offer-item3 { width: 30%; float: left; text-align: center; font-size: 1em;}
 
-.offer-item1:hover
-{
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.offer-item2:hover
-{
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-}
-.offer-item3:hover
-{
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-}
-
 @media (max-width: 1064px) {
 	.logo, .links, .slider, .offer, .oils {
 		width: 86%;
