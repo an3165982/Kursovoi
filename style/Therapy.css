@@ -114,6 +114,7 @@ footer div a:hover {
 @media (max-width: 660px) {
 	.links { margin-top: 2em; }
 	.big-img { display: none; }
+	#better {display: none; }
 }
 @media (max-width: 600px) {
 	.before-after { margin-top: 2em; }
