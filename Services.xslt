@@ -137,7 +137,7 @@
 
         <footer>
           <div><a href="#top">Наверх</a></div>
-          <div>Boston</div>
+          <div><a href="index.html">Boston</a></div>
         </footer>
       </body>
     </html>
