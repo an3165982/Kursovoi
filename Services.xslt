@@ -19,7 +19,7 @@
               <div><a href="Shop.html">Магазин</a></div>
               <div><a href="About.html">О нас</a></div>
             </div>
-            <div>Меняйтесь к лучшему</div>
+            <div id="better">Меняйтесь к лучшему</div>
           </div>
         </header>
 
