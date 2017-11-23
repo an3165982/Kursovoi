@@ -133,6 +133,7 @@ text-align: center; height: 17.5em; flex-wrap: wrap; justify-content: center; ba
 	.slider-img { width: 100%; }
 	.slider-text , .slider-text2 { width: 100%; }
 	.slider-text2 div {width: 100%; }
+	#better {display: none; }
 }
 @media (max-width: 405px) {
 	.offer { margin-top: 2em; }
