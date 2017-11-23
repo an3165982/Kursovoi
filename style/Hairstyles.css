@@ -137,8 +137,8 @@ footer div a:hover {
 }
 @media (max-width: 660px) {
 	.links { margin-top: 2em; }
-	.big-img { width: 96%;
-		margin-left: 2%}
+	.big-img { width: 96%; margin-left: 2%;}
+	#better {display: none; }
 }
 @media (max-width: 600px) {
 	.before-after { margin-top: 2em; }
