@@ -111,12 +111,8 @@ footer div a:hover {
 .offer { width: 70%; float: left; margin-left: 15%; margin-top: 1em; margin-bottom: 1em; display: flex; flex-wrap: wrap;
  justify-content: space-around; font-family: Heinrich; font-size: 1.5em; }
 .offer-item { float: left; width: 30%; }
-.offer-item img { height: 200px; }
-.offer-item img:hover {
-	-webkit-transform: scale(1.3);
-	-ms-transform: scale(1.3);
-	transform: scale(1.3);
-}
+.offer-item img { height: 200px; opacity: 0.7;}
+.offer-item img:hover {opacity: 1;}
 
 .before-after { width: 70%; margin-left: 15%; float: left; }
 .before-after-img { width: 65%; float: left; position: relative; }
