@@ -116,8 +116,7 @@ footer div a:hover {
 
 .before-after { width: 70%; margin-left: 15%; float: left; }
 .before-after-img { width: 65%; float: left; position: relative; }
-.before-after-img div { text-align: center; margin-top: 0.5em; width: 98%; font-family: Heinrich; font-size: 1.5em;}
-.before-after-img img { width: 45%; opacity: 0.5;}
+.before-after-img img { width: 100%;}
 .before-after-text { width: 35%; float: left; background-color: #89609F; font-family: Heinrich; font-size: 1.4em; text-align: center; margin-top: 0.5em;}
 .before-after-img img:hover {opacity: 1;}
 
