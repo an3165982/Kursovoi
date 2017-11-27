@@ -110,13 +110,13 @@ footer div a:hover {
 .slider-img2 img { height: 420px; }
 
 @media (max-width: 990px) {
-	.logo, .links, .big-img, .slider {
+	.logo, .links, .big-img, .slider, .slider2 {
 		width: 86%;
 		margin-left: 7%;
 	}
 }
 @media (max-width: 805px) {
-	.logo, .links, .big-img, .slider {
+	.logo, .links, .big-img, .slider, .slider2 {
 		width: 96%;
 		margin-left: 2%;
 	}
@@ -126,5 +126,8 @@ footer div a:hover {
 	.slider { height: auto; }
 	.slider-img { width: 100%; }
 	.slider-text { width: 100%; height:auto; }
+	.slider2 { height: auto; }
+	.slider-img2 { width: 100%; }
+	.slider-text2 { width: 100%; height:auto; }
 	#better {display: none; }
 }
