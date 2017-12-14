@@ -36,19 +36,19 @@
                   <td>Капсульное</td>
                   <td>Ленточное</td>
                 </tr>
-                <xsl:for-each select="FACULTY/SPECIALIZATION">
+                <xsl:for-each select="SERVICES/HAIR-EXTENTION">
                   <tr>
                     <td>
-                      <xsl:value-of select="NAME"></xsl:value-of>
+                      <xsl:value-of select="LENGTH"></xsl:value-of>
                     </td>
                     <xsl:choose>
-                      <xsl:when test="PEOPLE = 190">
-                        <td bgcolor=" #89609F">от $<xsl:value-of select="PEOPLE"></xsl:value-of>(Акция на блонд!)
+                      <xsl:when test="COST = 190">
+                        <td bgcolor=" #89609F">от $<xsl:value-of select="COST"></xsl:value-of>(Акция на блонд!)
                       </td>
                     </xsl:when>
-                    <xsl:when test="PEOPLE != 190">
+                    <xsl:when test="COST != 190">
                       <td>
-                        от $<xsl:value-of select="PEOPLE"></xsl:value-of>
+                        от $<xsl:value-of select="COST"></xsl:value-of>
                       </td>
                     </xsl:when>
                   </xsl:choose>
@@ -60,18 +60,18 @@
             </table>
             <div class="big-img-text3"><a href="Keratin.html">Кератиновое выпрямление(Цена зависит от состава)</a></div>
             <table border="1">
-          <xsl:for-each select="FACULTY/KERATIN">
+          <xsl:for-each select="SERVICES/KERATIN">
             <tr>
               <td>
-                <xsl:value-of select="NAME"></xsl:value-of>
+                <xsl:value-of select="LENGTH"></xsl:value-of>
               </td>
               <xsl:choose>
-                <xsl:when test="PEOPLE = 50">
-                  <td bgcolor=" #89609F">$<xsl:value-of select="PEOPLE"></xsl:value-of>(Акция на любой состав!)</td>
+                <xsl:when test="COST = 50">
+                  <td bgcolor=" #89609F">$<xsl:value-of select="COST"></xsl:value-of>(Акция на любой состав!)</td>
                   </xsl:when>
-                <xsl:when test="PEOPLE != 50">
+                <xsl:when test="COST != 50">
                   <td>
-                    от $<xsl:value-of select="PEOPLE"></xsl:value-of>
+                    от $<xsl:value-of select="COST"></xsl:value-of>
                   </td>
                 </xsl:when>
               </xsl:choose>
@@ -90,20 +90,20 @@
             <td>Экранирование</td>
             <td>Полировка</td>
           </tr>
-          <xsl:for-each select="FACULTY/POlEKR">
+          <xsl:for-each select="SERVICES/POlEKR">
             <tr>
               <td>
-                <xsl:value-of select="NAME"></xsl:value-of>
+                <xsl:value-of select="LENGTH"></xsl:value-of>
               </td>
               <xsl:choose>
-                <xsl:when test="PEOPLE = 7.5">
+                <xsl:when test="COST = 7.5">
                   <td bgcolor=" #89609F">
-                    $<xsl:value-of select="PEOPLE"></xsl:value-of>(Акция!)
+                    $<xsl:value-of select="COST"></xsl:value-of>(Акция!)
                   </td>
                 </xsl:when>
-                <xsl:when test="PEOPLE != 7.5">
+                <xsl:when test="COST != 7.5">
                   <td>
-                    от $<xsl:value-of select="PEOPLE"></xsl:value-of>
+                    от $<xsl:value-of select="COST"></xsl:value-of>
                   </td>
                 </xsl:when>
               </xsl:choose>
@@ -121,13 +121,13 @@
           Средняя стоимость на причёски приведена в таблице.
         </div>
         <table border="1" id="styles">
-          <xsl:for-each select="FACULTY/PRICH">
+          <xsl:for-each select="SERVICES/PRICH">
             <tr>
               <td>
-                <xsl:value-of select="NAME"></xsl:value-of>
+                <xsl:value-of select="LENGTH"></xsl:value-of>
               </td>
                   <td >
-                    от $<xsl:value-of select="PEOPLE"></xsl:value-of>
+                    от $<xsl:value-of select="COST"></xsl:value-of>
                   </td>
             </tr>
           </xsl:for-each>
